@@ -18,7 +18,7 @@ package My::P2;
 use Log::ger::Like::LogAny;
 
 sub x {
-    my $log = Log::ger::Like::LogAny->get_logger;
+    my $log = Log::Any->get_logger;
     $log->warnf("warn%d", 1+1);
     $log->debugf("debug2");
 }

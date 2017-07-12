@@ -47,23 +47,10 @@ sub get_hooks {
 
 =head1 SYNOPSIS
 
- use Log::ger::Plugin 'LogAny';
- use Log::ger;
-
- log_warn "blah ...";
+Use from L<Log::ger::Like::LogAny>.
 
 
 =head1 DESCRIPTION
-
-This plugin does the following:
-
-=over
-
-=item * create log methods like Log::Any
-
-In addition to debug(), trace(), etc al also create debugf(), tracef(), et al.
-
-=back
 
 
 =head1 SEE ALSO
