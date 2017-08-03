@@ -8,6 +8,8 @@ use strict 'subs', 'vars';
 use warnings;
 # END IFUNBUILT
 
+use Log::ger::Level::Like::LogAny;
+
 sub get_logger {
     my ($package, %args) = @_;
 
@@ -62,15 +64,15 @@ The rest of this works in Log::Any as well as under Log::ger::Like::LogAny:
 
  my $log = Log::Any->get_logger(category => 'My::Package');
 
- $log->debug("blah ...", "more blah ...");
+ $log->err("blah ...", "more blah ...");
  $log->tracef("fmt %s %s", "blah ...", {data=>'structure'});
 
  if ($log->is_trace) {
     ...
  }
 
-To set output, use one of the available Log::ger::Output::*. You can send logs
-to Log::Any using L<Log::ger::Output::LogAny>.
+To set output, use one of the available C<Log::ger::Output::*>. You can send
+logs to Log::Any using L<Log::ger::Output::LogAny>.
 
 
 =head1 DESCRIPTION
